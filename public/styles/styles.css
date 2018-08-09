@@ -1,0 +1,50 @@
+body, html {
+  height: 100%;
+}
+
+.list-group-item {
+  line-height: 2.5;
+}
+
+.container{
+  margin-top: 100px;
+  /* box-shadow: 5px 5px 5px #888; */
+  padding: 10px;
+  background-color: rgb(242, 242, 44);
+  margin-bottom: 25px;
+  color: black;
+  border: groove;
+  border-width: 15px;
+  border-radius: 50px;
+  
+}
+
+label {
+  color: black;
+}
+body{
+  background-color: #112631;
+  background-image: url("https://wallpaper-house.com/data/out/6/wallpaper2you_106359.jpg");
+    z-index: 0;
+
+    /* Full height */
+    min-height: 100%; 
+    background-attachment: fixed;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed; */
+}
+
+label{
+  font-size: 14px;
+}
+nav{
+  margin-bottom: 15px;
+  background-color: rgb(242, 242, 44, .8);
+  
+}
+ul.left > li > a,a.brand-logo{
+  color:black
+}

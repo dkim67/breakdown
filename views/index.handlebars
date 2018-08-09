@@ -1,0 +1,51 @@
+<nav class="accent-2">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo center"><i class="small material-icons">lightbulb_outline</i>Break It Down</a>     
+      <ul class="left hide-on-med-and-down">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/submit">Submit</a></li>
+        <li><a href="/login">Login</a></li> 
+      </ul> 
+   </div>
+  </nav>
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1">
+        <h3 class="center-align">{{msg}}</h3>
+        <p>Need a project idea for your technology boot camp? We have built this site for you, dear friend. You are tasked with writing a project for your programming / education boot camp, and you realize, "OH NO! I'm a programming person, not an ideas human!" Fear not, we are all on the same team, and now that you have found this page, your mission is much closer to being complete. Please enjoy our free project ideas below, and consider supporting our learning and development by subscribing to our premium ideas.</p><p>
+        Wyatt, Brett, Brad, Daniel, and Dhrumil are using your generosity to further our personal and professional development. Please let us know if you have any suggestions or successes with these great project ideas.
+</p>
+<center><div id="paypal-button"></div>
+</center>
+        <h5>Project Ideas</h5>
+        <ul id="example-list" class="list-group">
+          {{#each examples}}{{#unless this.members_only}}
+          <li style="line-height:1.5" data-id="{{this.id}}" class="list-group-item">
+            <div>
+              <a href="ideas/{{this.id}}">{{this.title}}</a>
+              <br>
+              <span style="font-size:12px"> {{this.description}}<br> <b>Technologies used:</b> {{this.tech_used}}
+                {{!-- <div>
+                  <b>User Stories:</b>
+                  {{#each userstories}}
+                  <ul>
+                    <li>{{story}}</li>
+                  </ul>
+                  {{/each}}
+                </div> --}}
+              </span>
+            </div>
+
+          </li>
+          {{/unless}}{{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/paypal.js"></script>
